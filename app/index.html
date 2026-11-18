@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Get Ekalight</title>
+<link rel="canonical" href="https://ekalight.com/">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 720px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; background: #fff; text-align: center; }
+  @media (prefers-color-scheme: dark) { body { color:#e6e6e6; background:#111; } }
+  h1 { font-size: 32px; margin-bottom: 4px; }
+  .tagline { font-size: 18px; color: #666; margin-top: 0; }
+  .stores { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 28px 0; }
+  .store { display: block; width: 100%; max-width: 320px; box-sizing: border-box; padding: 16px 20px; font-size: 18px; border-radius: 10px; text-decoration: none;
+           font-weight: 600; background: #1a1a1a; color: #fff; }
+  @media (prefers-color-scheme: dark) { .store { background: #e6e6e6; color: #111; } }
+</style>
+</head>
+<body>
+<h1>Ekalight</h1>
+<p class="tagline">Scan any card, see its real price. Free.</p>
+<div class="stores" id="stores">
+  <a class="store" id="ios" href="https://apps.apple.com/app/apple-store/id6778252784?pt=128755964&amp;ct=tt_bio&amp;mt=8">Download on the App Store</a>
+  <a class="store" id="android" href="https://play.google.com/store/apps/details?id=com.ekalight.app&amp;referrer=utm_source%3Dtiktok%26utm_medium%3Dbio">Get it on Google Play</a>
+</div>
+<script>
+  // Put the visitor's own store first; both buttons always stay visible.
+  if (/Android/.test(navigator.userAgent)) {
+    var s = document.getElementById("stores"); s.insertBefore(document.getElementById("android"), s.firstChild);
+  }
+</script>
+</body>
+</html>
