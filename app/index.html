@@ -14,17 +14,16 @@
   h1 { font-size: 32px; margin-bottom: 4px; }
   .tagline { font-size: 18px; color: #666; margin-top: 0; }
   .stores { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 28px 0; }
-  .store { display: block; width: 100%; max-width: 320px; box-sizing: border-box; padding: 16px 20px; font-size: 18px; border-radius: 10px; text-decoration: none;
-           font-weight: 600; background: #1a1a1a; color: #fff; }
-  @media (prefers-color-scheme: dark) { .store { background: #e6e6e6; color: #111; } }
+  .store { display: block; }
+  .store img { display: block; width: 220px; height: auto; }
 </style>
 </head>
 <body>
 <h1>Ekalight</h1>
 <p class="tagline">Scan any card, see its real price. Free.</p>
 <div class="stores" id="stores">
-  <a class="store" id="ios" href="https://apps.apple.com/app/apple-store/id6778252784?pt=128755964&amp;ct=tt_bio&amp;mt=8">Download on the App Store</a>
-  <a class="store" id="android" href="https://play.google.com/store/apps/details?id=com.ekalight.app&amp;referrer=utm_source%3Dtiktok%26utm_medium%3Dbio">Get it on Google Play</a>
+  <a class="store" id="ios" href="https://apps.apple.com/app/apple-store/id6778252784?pt=128755964&amp;ct=tt_bio&amp;mt=8"><img src="/app/img/app-store.svg" alt="Download on the App Store"></a>
+  <a class="store" id="android" href="https://play.google.com/store/apps/details?id=com.ekalight.app&amp;referrer=utm_source%3Dtiktok%26utm_medium%3Dbio"><img src="/app/img/google-play.png" alt="Get it on Google Play"></a>
 </div>
 <script>
   // Put the visitor's own store first; both buttons always stay visible.
